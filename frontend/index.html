@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NodeMCU Personal Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task List</h1>
+
+    <form id="addTaskForm">
+        <label for="taskTime">Time:</label>
+        <input type="time" id="taskTime" name="taskTime" required>
+
+        <label for="taskDate">Date:</label>
+        <input type="date" id="taskDate" name="taskDate" required>
+
+        <label for="taskDescription">Description:</label>
+        <textarea id="taskDescription" name="taskDescription" rows="3" required></textarea>
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
